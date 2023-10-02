@@ -1,7 +1,12 @@
 const express = require('express');
 const router = express.Router();
-const Todo = require('../modules/Todo')
+const Todo = require('../models/Todo');
+// const validateJWT = require('../middlewares/validateJWT');
 
+// middlewares
+// router.use(validateJWT);
+
+// routes
 
 
 router.get('/todos', async (req, res) => {
